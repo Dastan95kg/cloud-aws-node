@@ -1,6 +1,6 @@
 "use strict";
 const products = require("../products.js");
-const Responses = require("./apiResponses.js");
+const Responses = require("../utils/apiResponses.js");
 
 module.exports.handler = async (event) => {
   if (!event.pathParameters || !event.pathParameters.productId) {

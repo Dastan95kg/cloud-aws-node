@@ -1,4 +1,4 @@
-const Responses = {
+export const Responses = {
   _200: (data) => {
     return { statusCode: 200, body: JSON.stringify(data) };
   },
@@ -6,5 +6,3 @@ const Responses = {
     return { statusCode: 400, body: JSON.stringify(data.message) };
   },
 };
-
-module.exports = Responses;

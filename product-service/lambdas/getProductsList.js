@@ -1,7 +1,7 @@
 "use strict";
-const products = require("../products.js");
+import { products } from "../products.js";
 
-module.exports.handler = async (event) => {
+export const handler = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(products),

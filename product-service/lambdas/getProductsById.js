@@ -1,8 +1,8 @@
 "use strict";
-const products = require("../products.js");
-const Responses = require("../utils/apiResponses.js");
+import { products } from "../products.js";
+import { Responses } from "../utils/apiResponses.js";
 
-module.exports.handler = async (event) => {
+export const handler = async (event) => {
   if (!event.pathParameters || !event.pathParameters.productId) {
     return Responses._400({ message: "Missing product id from the path" });
   }
